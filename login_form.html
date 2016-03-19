@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>
+Form
+</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	   <link rel="stylesheet" href="log_in.css" type="text/css">
+</head>
+<body style="background:grey;width:100%;width:100%">
+<div class="row" style="background:white;width:54%">
+	<div class="col-md-4">
+	<ul id="first">
+	<li>Use it as simple</li>
+	<li>Discount on New account</li>
+	<li>contact us</li>
+	</ul>
+	<button type="button" class="btn btn-default" id="earphone" onclick="contact()";>
+  <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+</button>
+<div id="details"></div>
+	</div>
+	<div class="col-md-6">
+	<a href="" id="cross"><i class="fa fa-times fa-2x"></i></a></br>
+	<a href="" id="vera" onclick="login()";>Login</a>
+	
+	<div class="gandu">
+	<div id="something" style="padding-top:-40px;">
+	</div>
+	<input type="text" id="case" placeholder="Name" onfocus="foo()"; style="width:300px;border-bottom:1px solid teal;border-top:none;border-left:none;border-right:none;"></input>
+	<div id="var"style="margin-top:10px"></div>
+	<input type="password" placeholder="password" id="co" onfocus="fooo()"; style="width:300px;border-bottom:1px solid teal;border-top:none;border-left:none;border-right:none;"></input>
+	<div style="margin-top:10px;">
+	<a href="" style="color:blue;margin-left:200px;">Need help?</a></div>
+	<div id="conditions">
+	<input type="checkbox" id="terms"> I agree with terms and conditions</input>
+	<div id="cow">
+	<input class="btn btn-default" type="button" value="cancel" id="same"></input>
+	<input class="btn btn-default" type="button" value="submit" id="same"></input>
+	</div>
+	<p>Login with different account</p>
+	<ul class="list-inline">
+	<a href="" id="icon"><i class="fa fa-facebook-square fa-3x"></i></a>
+	<a href="" id="icon"><i class="fa fa-twitter-square fa-3x"></i></a>
+	<a href="" id="icon"><i class="fa fa-linkedin-square fa-3x"></i></a>
+	</ul>
+	</div>
+	</div>
+	<script type="text/javascript">
+	function foo(){
+		document.getElementById("something").innerHTML = document.getElementById("case").placeholder;
+		document.getElementById("case").placeholder=" ";
+	}
+	window.onclick=function(){
+		if(document.getElementById("case").value==""){
+		document.getElementById("case").placeholder="Name";
+		document.getElementById("something").innerHTML="";
+		}
+		else{
+			document.getElementById("something").innerHTML="Name";
+		}
+		if(document.getElementById("co").value==""){
+		document.getElementById("var").innerHTML="";
+		document.getElementById("co").placeholder="password";
+		}
+		else{
+					document.getElementById("var").innerHTML="password";
+
+		}
+	}
+	function fooo(){
+		if(document.getElementById("case").value==""){
+			document.getElementById("case").placeholder="Name";
+			document.getElementById("something").innerHTML="";
+		}
+		document.getElementById("var").innerHTML=document.getElementById("co").placeholder;
+		document.getElementById("co").placeholder=" ";
+	}
+	function login(){
+		alert("Hi.please login");
+	}
+	function contact(){
+		document.getElementById("details").innerHTML="call us:9679017597";
+	}
+
+	</script>
+	</body>
+	</html>
